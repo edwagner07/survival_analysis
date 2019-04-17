@@ -422,4 +422,10 @@ ggplot(data = rmse_summary, aes(x = cval, group = condition)) +
         legend.text = element_text(size = 10))
 
 ```
+# Code snippets for examples
 
+logreg_object <- glm(response ~ age + income + gamma_func(week), 
+                     data = case_control, family = "binomial")
+
+logreg_object <- glm(response ~ age + income + factor(week), 
+                     data = case_control, family = "binomial")
