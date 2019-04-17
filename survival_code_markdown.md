@@ -5,7 +5,7 @@
 ```{r, cache = T, results = "hide", echo = F}
 library(dplyr)
 library(cowplot)
-library(dat.table)
+library(data.table)
 
 ## Log-odds and response probability functions
 loglink <- function(z) 1 / (1 + exp(-z))
